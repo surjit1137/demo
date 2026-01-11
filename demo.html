@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Phone Price Prediction</title>
+
+    <!-- Modern Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #1e293b, #0f172a);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 450px;
+            margin: 60px auto;
+            background: #ffffff10;
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            font-weight: 600;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background: #4f46e5;
+            border: none;
+            font-size: 16px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #4338ca;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .mobile-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .mobile-images img {
+            width: 500px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>📱 Used Phone Price Prediction</h1>
+
+        <div class="mobile-images">
+            <img src="C:/Users/surjit Rajput/Pictures/smartphone.png" width="500" height="400">
+        </div>
+
+        <form action="predict" method="post">
+            <div class="input-group">
+                <label>Brand *</label>
+                <input type="text" name="brand" placeholder="e.g., Apple, Samsung" required>
+            </div>
+
+            <div class="input-group">
+                <label>Model *</label>
+                <input type="text" name="model" placeholder="e.g., iPhone 13 Pro" required>
+            </div>
+
+            <div class="input-group">
+                <label>RAM (GB) *</label>
+                <input type="text" name="ram" placeholder="e.g., 6" required>
+            </div>
+
+            <div class="input-group">
+                <label>Storage (GB) *</label>
+                <input type="text" name="storage" placeholder="e.g., 128" required>
+            </div>
+
+            <div class="input-group">
+                <label>Camera (MP) *</label>
+                <input type="text" name="camera" placeholder="e.g., 48" required>
+            </div>
+
+            <div class="input-group">
+                <label>Battery (mAh) *</label>
+                <input type="text" name="battery" placeholder="e.g., 4500" required>
+            </div>
+
+            <button class="btn" type="submit">Predict Price</button>
+        </form>
+
+        <div class="footer">
+            Developed By <b>Surjit Rajput</b> © 2025
+        </div>
+    </div>
+</body>
+</html>
